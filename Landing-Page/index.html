@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca Cola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="Logo1.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's what<br><span>I like</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptate maxime, aperiam architecto harum cupiditate! Quis nam rem maxime in culpa, dicta repellendus necessitatibus quaerat velit doloribus aut asperiores sunt!</p>
+                <a href="#">View all products</a>
+            </div>
+            <div class="imgBox">
+                <img src="CocaCola.png" class="coca">
+            </div>
+            <div>
+                <ul class="thumb">
+                    <li><img src="CocaCola.png" onclick="imgSlider('CocaCola.png'); changeBgColor('#ed1c24')"></li>
+                    <li><img src="Sprite.png" onclick="imgSlider('Sprite.png'); changeBgColor('#00a859')"></li>
+                    <li><img src="Fanta.png" onclick="imgSlider('Fanta.png'); changeBgColor('#ff8200')"></li>
+                </ul>
+                <ul class="sci">
+                    <li><a href="#"><img src="facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="instagram.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+         function imgSlider(image)
+         {
+            document.querySelector('.coca').src = image
+         }
+         function changeBgColor(color)
+         {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+         }
+    </script>
+</body>
+</html>
